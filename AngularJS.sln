@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS", "AngularJS\AngularJS.csproj", "{2322B205-09F6-4E2C-8417-44F3B6D5B0EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS.Tests", "AngularJS.Tests\AngularJS.Tests.csproj", "{3B163BFD-21B2-4D68-8B2B-4632EC2652AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2322B205-09F6-4E2C-8417-44F3B6D5B0EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2322B205-09F6-4E2C-8417-44F3B6D5B0EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2322B205-09F6-4E2C-8417-44F3B6D5B0EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2322B205-09F6-4E2C-8417-44F3B6D5B0EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B163BFD-21B2-4D68-8B2B-4632EC2652AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B163BFD-21B2-4D68-8B2B-4632EC2652AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B163BFD-21B2-4D68-8B2B-4632EC2652AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B163BFD-21B2-4D68-8B2B-4632EC2652AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
