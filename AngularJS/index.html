@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/Script.js"></script>
+</head>
+<body ng-controller="myController">
+    <div> {{ message }}</div>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Förnamn</td>
+                <td>Efternamn</td>
+                <td>Ålder</td>
+            </tr>
+        </thead>
+        <tr ng-repeat="employee in employees | filter: limit:3">
+            <td>{{ employee.firstName }}</td>
+            <td>{{ employee.lastName }}</td>
+            <td>{{ employee.age }}</td>
+        </tr>
+    </table>
+
+</body>
+</html>
