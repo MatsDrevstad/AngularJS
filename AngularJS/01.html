@@ -1,40 +1,14 @@
 ﻿<!DOCTYPE html>
-<html ng-app="myModule">
+<html>
 <head>
     <title></title>
 	<meta charset="utf-8" />
     <script src="scripts/angular.min.js"></script>
-    <script>
-        var myModule = angular.module('myModule', [])
-            .controller('myController', function ($scope) {
-            var employees = [
-                { firstName: 'Mats', lastName: 'Drevstad', age: 45 },
-                { firstName: 'Nikolai', lastName: 'Davydenko', age: 12 },
-                { firstName: 'Nils', lastName: 'Davydenko', age: 7 },
-                { firstName: 'Mirza', lastName: 'Selimasic', age: 47 },
-                { firstName: 'Nedisa', lastName: 'Selimasic', age: 13 },
-                { firstName: 'Nedis', lastName: 'Selimasic', age: 11 },
-            ];
-
-            $scope.employees = employees;
-            });
-    </script>
 </head>
-<body ng-controller="myController">
-    <table>
-        <thead>
-            <tr>
-                <th ng-click="">Förnamn</th>
-                <th ng-click="">Efternamn</th>
-                <th ng-click="">Ålder</th>
-            </tr>
-        </thead>
-        <tr ng-repeat="employee in employees">
-            <td>{{ employee.firstName }}</td>
-            <td>{{ employee.lastName }}</td>
-            <td>{{ employee.age }}</td>
-        </tr>
-    </table>
+<body ng-app="">
+    <div>
+        10 + 20 = {{ 10 + 20}}
+    </div>
 
 </body>
 </html>
