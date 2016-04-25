@@ -15,3 +15,15 @@ var myModule = angular.module('myModule', [])
 
         $scope.employees = employees;
     });
+
+//02.html
+//Create the module
+var myApp02 = angular.module("myModule02", []);
+
+//Create the Controller
+var myController = function ($scope) { //using an anonymous function
+    $scope.message = "Angular JS Test";
+}
+
+//Create the Controller with the Module
+myApp02.controller("myController02", myController);
