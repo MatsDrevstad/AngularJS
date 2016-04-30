@@ -96,6 +96,9 @@
   <ItemGroup>
     <Content Include="02.html" />
     <Content Include="01.html" />
+    <Content Include="04.html" />
+    <Content Include="03.html" />
+    <Content Include="Images\Flag.png" />
     <Content Include="old.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -116,7 +119,9 @@
     <Content Include="scripts\angular-mocks.js" />
     <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
-    <Content Include="scripts\Script.js" />
+    <Content Include="scripts\Script02.js" />
+    <Content Include="scripts\Script04.js" />
+    <Content Include="scripts\Script03.js" />
     <Content Include="Style.css" />
     <Content Include="Web.config" />
   </ItemGroup>

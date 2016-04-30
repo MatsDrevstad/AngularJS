@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/Script04.js"></script>
+</head>
+<body>
+    <div ng-controller="myController">
+        <div>
+            Name {{ country.name }}
+        </div>
+        <div>
+            Capital {{ country.capital }}
+        </div>
+        <div>
+            <img ng-src="{{ country.flag }}" alt="{{ country.name + ' flag'}}" style="width:100px;height:auto"/>
+        </div>
+    </div>
+
+</body>
+</html>
