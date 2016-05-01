@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="02.html" />
     <Content Include="01.html" />
+    <Content Include="05.html" />
     <Content Include="04.html" />
     <Content Include="03.html" />
     <Content Include="Images\Flag.png" />
@@ -120,6 +121,7 @@
     <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
     <Content Include="scripts\Script02.js" />
+    <Content Include="scripts\Script05.js" />
     <Content Include="scripts\Script04.js" />
     <Content Include="scripts\Script03.js" />
     <Content Include="Style.css" />
