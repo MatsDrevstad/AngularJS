@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/Script07.js"></script>
+    <link href="Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-controller="myController">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Likes</th>
+                    <th>Dislikes</th>
+                    <th>Likes/Dislikes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="technology in technologies">
+                    <td>{{ technology.name }}</td>
+                    <td>{{ technology.likes }}</td>
+                    <td>{{ technology.dislikes }}</td>
+                    <td>
+                        <input type="button" value="Like" ng-click="incrementLikes(technology)" />
+                        <input type="button" value="Dislike" ng-click="incrementDislikes(technology)" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <ul>
+            <li ng-repeat="country in countries">
+                {{ country.countryName }}
+                <ul>
+                    <li ng-repeat="city in country.cities">
+                        {{ city.cityName }}
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+
+        <ul>
+            <li ng-repeat="country in countries">
+                {{ country.countryName }} (Index = {{ $index }})
+                <ul>
+                    <li ng-repeat="city in country.cities">
+                        {{ city.cityName }} (ParentIndex = {{ $parent.$index }}, Index = {{ $index }})
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+
+        <ul>
+            <li ng-repeat="country in countries" ng-init="parentIndex = $index">
+                {{ country.countryName }} (Index = {{ $index }})
+                <ul>
+                    <li ng-repeat="city in country.cities">
+                        {{ city.cityName }} (ParentIndex = {{ parentIndex }}, Index = {{ $index }})
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+        
+    </div>
+
+</body>
+</html>
+

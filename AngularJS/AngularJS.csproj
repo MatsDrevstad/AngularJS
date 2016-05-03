@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="02.html" />
     <Content Include="01.html" />
+    <Content Include="07 Handling Events.html" />
     <Content Include="06.html" />
     <Content Include="05.html" />
     <Content Include="04.html" />
@@ -122,6 +123,7 @@
     <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
     <Content Include="scripts\Script02.js" />
+    <Content Include="scripts\Script07.js" />
     <Content Include="scripts\Script06.js" />
     <Content Include="scripts\Script05.js" />
     <Content Include="scripts\Script04.js" />
