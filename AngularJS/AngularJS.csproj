@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="02.html" />
     <Content Include="01.html" />
+    <Content Include="11 Serach filter.html" />
     <Content Include="10 Bidirectionasl sort.html" />
     <Content Include="09 Sort data.html" />
     <Content Include="08 Filters.html" />
@@ -126,6 +127,7 @@
     <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
     <Content Include="scripts\Script02.js" />
+    <Content Include="scripts\Script11.js" />
     <Content Include="scripts\Script10.js" />
     <Content Include="scripts\Script09.js" />
     <Content Include="scripts\Script08.js" />
