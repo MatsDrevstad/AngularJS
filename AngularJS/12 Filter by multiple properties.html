@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/Script12.js"></script>
+    <link href="Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-controller="myController">
+        Search: <input type="text" placeholder="Search name & gender" ng-model="searchText" />
+        <br /><br />
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date Of Birth</th>
+                    <th>Gender</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees | filter: search ">
+                    <td>{{ employee.name }}</td>
+                    <td>{{ employee.dateOfBirth  | date:"yyyy-MM-dd" }}</td>
+                    <td>{{ employee.gender | uppercase }}</td>
+                    <td>{{ employee.salary | currency:"£":0 }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>
+
