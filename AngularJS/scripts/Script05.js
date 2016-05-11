@@ -7,7 +7,7 @@ var myApp = angular
     .controller("myController", function ($scope) {
         $scope.message = "I sommar och soliga dagar";
 
-        var employee = { firstName: 'Mats', lastName: 'Drevstad', age: 45 };
+        var employee = { firstName: 'Mats', lastName: 'Davidsson', age: 45 };
         $scope.employee = employee;
     }
 );

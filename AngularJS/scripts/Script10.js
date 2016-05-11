@@ -7,7 +7,7 @@ var myApp = angular
     .controller("myController", function ($scope) {
 
         var employees = [
-            { name: 'Mats Drevstad', dateOfBirth: new Date("January 6, 1971"), gender: 'Male', salary: '55555.65234' },
+            { name: 'Mats Davidsson', dateOfBirth: new Date("January 6, 1971"), gender: 'Male', salary: '55555.65234' },
             { name: 'Nikolai Davydenko', dateOfBirth: new Date("April 25, 2003"), gender: 'Male', salary: '44444' },
             { name: 'Nils Davydenko', dateOfBirth: new Date("October 8, 2008"), gender: 'Male', salary: '33333.35' },
             { name: 'Mirza Selimasic', dateOfBirth: new Date("January 1, 1969"), gender: 'Female', salary: '55555.56' },

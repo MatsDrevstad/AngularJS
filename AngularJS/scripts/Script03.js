@@ -7,7 +7,7 @@ var myApp = angular.module("myModule", []);
 //Create the Controller with the Module
 myApp.controller("myController", function ($scope) {
 	var employees = [
-		{ firstName: 'Mats', lastName: 'Drevstad', age: 45 },
+		{ firstName: 'Mats', lastName: 'Davidsson', age: 45 },
 		{ firstName: 'Nikolai', lastName: 'Davydenko', age: 12 },
 		{ firstName: 'Nils', lastName: 'Davydenko', age: 7 },
 		{ firstName: 'Mirza', lastName: 'Selimasic', age: 47 },
