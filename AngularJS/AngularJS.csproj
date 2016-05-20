@@ -105,6 +105,12 @@
     <Content Include="05.html" />
     <Content Include="04.html" />
     <Content Include="03.html" />
+    <Content Include="12 Filter by multiple properties.html" />
+    <Content Include="13 Create a custom filter.html" />
+    <Content Include="14 ng-hide-show.html" />
+    <Content Include="15 ng-init directive.html" />
+    <Content Include="17 Consuming ASP NET Web Service .html" />
+    <Content Include="16 ng-include.html" />
     <Content Include="Images\Flag.png" />
     <Content Include="old.html" />
     <Content Include="packages.config" />
@@ -126,6 +132,7 @@
     <Content Include="scripts\angular-mocks.js" />
     <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
+    <Content Include="scripts\Filter13.js" />
     <Content Include="scripts\Script02.js" />
     <Content Include="scripts\Script11.js" />
     <Content Include="scripts\Script10.js" />
@@ -136,6 +143,12 @@
     <Content Include="scripts\Script05.js" />
     <Content Include="scripts\Script04.js" />
     <Content Include="scripts\Script03.js" />
+    <Content Include="scripts\Script12.js" />
+    <Content Include="scripts\Script13.js" />
+    <Content Include="scripts\Script14.js" />
+    <Content Include="scripts\Script15.js" />
+    <Content Include="scripts\Script17.js" />
+    <Content Include="scripts\Script16.js" />
     <Content Include="Style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
