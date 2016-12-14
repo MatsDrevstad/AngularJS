@@ -117,6 +117,7 @@
     <Content Include="13 Create a custom filter.html" />
     <Content Include="14 ng-hide-show.html" />
     <Content Include="15 ng-init directive.html" />
+    <Content Include="21 anchorscroll example.html" />
     <Content Include="20 Create Custom service.html" />
     <Content Include="19 Services.html" />
     <Content Include="18 http service.html" />
@@ -129,6 +130,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="scripts\angular.min.js.map" />
+    <Content Include="scripts\Script21.js" />
     <Content Include="scripts\Script20.js" />
     <Content Include="scripts\Script19.js" />
     <Content Include="scripts\Script18.js" />
@@ -165,7 +167,7 @@
     <Content Include="scripts\Script15.js" />
     <Content Include="scripts\Script17.js" />
     <Content Include="scripts\Script16.js" />
-    <Content Include="Style.css" />
+    <Content Include="Styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
