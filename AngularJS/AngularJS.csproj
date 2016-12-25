@@ -117,12 +117,16 @@
     <Content Include="13 Create a custom filter.html" />
     <Content Include="14 ng-hide-show.html" />
     <Content Include="15 ng-init directive.html" />
-    <Content Include="21 anchorscroll example.html" />
+    <Content Include="22 Routing tutorial.html" />
+    <Content Include="23 Layout template.html" />
+    <Content Include="22 Anchorscroll with database data.html" />
+    <Content Include="21 Anchorscroll example.html" />
     <Content Include="20 Create Custom service.html" />
     <Content Include="19 Services.html" />
     <Content Include="18 http service.html" />
     <Content Include="17 Consuming ASP NET Web Service .html" />
     <Content Include="16 ng-include.html" />
+    <Content Include="CountryService.asmx" />
     <Content Include="Images\Flag.png" />
     <Content Include="old.html" />
     <Content Include="packages.config" />
@@ -130,11 +134,13 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="scripts\angular.min.js.map" />
+    <Content Include="scripts\Script22.js" />
     <Content Include="scripts\Script21.js" />
     <Content Include="scripts\Script20.js" />
     <Content Include="scripts\Script19.js" />
     <Content Include="scripts\Script18.js" />
     <Content Include="scripts\stringService.js" />
+    <Content Include="Styles.css" />
     <Content Include="WebService1.asmx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -167,10 +173,15 @@
     <Content Include="scripts\Script15.js" />
     <Content Include="scripts\Script17.js" />
     <Content Include="scripts\Script16.js" />
-    <Content Include="Styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="City.cs" />
+    <Compile Include="Country.cs" />
+    <Compile Include="CountryService.asmx.cs">
+      <DependentUpon>CountryService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Model1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebService1.asmx.cs">
