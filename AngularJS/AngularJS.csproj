@@ -118,8 +118,8 @@
     <Content Include="14 ng-hide-show.html" />
     <Content Include="15 ng-init directive.html" />
     <Content Include="22 Routing tutorial.html" />
-    <Content Include="23 Layout template.html" />
-    <Content Include="22 Anchorscroll with database data.html" />
+    <Content Include="24 Layout template.html" />
+    <Content Include="23 Anchorscroll with database data.html" />
     <Content Include="21 Anchorscroll example.html" />
     <Content Include="20 Create Custom service.html" />
     <Content Include="19 Services.html" />
@@ -133,6 +133,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="scripts\angular-route.js" />
     <Content Include="scripts\angular.min.js.map" />
     <Content Include="scripts\Script22.js" />
     <Content Include="scripts\Script21.js" />
@@ -140,7 +141,12 @@
     <Content Include="scripts\Script19.js" />
     <Content Include="scripts\Script18.js" />
     <Content Include="scripts\stringService.js" />
+    <Content Include="sql.txt" />
+    <Content Include="StudentService.asmx" />
     <Content Include="Styles.css" />
+    <Content Include="Templates\courses.html" />
+    <Content Include="Templates\home.html" />
+    <Content Include="Templates\students.html" />
     <Content Include="WebService1.asmx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -184,6 +190,11 @@
     </Compile>
     <Compile Include="Model1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="StudentService.asmx.cs">
+      <DependentUpon>StudentService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="WebService1.asmx.cs">
       <DependentUpon>WebService1.asmx</DependentUpon>
       <SubType>Component</SubType>
