@@ -118,6 +118,9 @@
     <Content Include="14 ng-hide-show.html" />
     <Content Include="15 ng-init directive.html" />
     <Content Include="22 Routing tutorial.html" />
+    <Content Include="index.html" />
+    <Content Include="27 Remove from URL.html" />
+    <Content Include="25 Partial template.html" />
     <Content Include="24 Layout template.html" />
     <Content Include="23 Anchorscroll with database data.html" />
     <Content Include="21 Anchorscroll example.html" />
@@ -133,8 +136,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="scripts\angular-route.js" />
     <Content Include="scripts\angular.min.js.map" />
+    <Content Include="scripts\angular-route.min.js" />
+    <Content Include="scripts\script.js" />
     <Content Include="scripts\Script22.js" />
     <Content Include="scripts\Script21.js" />
     <Content Include="scripts\Script20.js" />
@@ -156,7 +160,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="index.html" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="scripts\angular-mocks.js" />

@@ -1,50 +1,188 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!--
+    28 AngularJS default route
+
+In this video we will discuss how to set a default route in Angular. This is continuation to Part 27. Please watch Part 27 from AngularJS Tutorial before proceeding.
+
+We will continue with the example that we worked with in Part 27.
+
+At the moment the problem is that, if you try to navigate to a route that is not configured, you will see only the layout page without any partial template injected into it.
+
+For example if you navigate to http://localhost:51983/ABC, since ABC is not a configured route you will see that no partial template is injected into the layout page (index.html)
+
+You will also have this same problem if you navigate to the root of the site i.e http://localhost:51983. The reason angular is displaying the empty layout template in both these cases, is because it does not know what partial template to inject. We want angular to redirect to default route if the user is trying to navigate to a route that is not configured.
+
+How to configure the default route in Angular
+Well that is straight forward. All you need is the following line in config() function in script.js file
+
+.otherwise({ redirectTo: "/home"
+})
+
+With the above change the code in config() function should be as shown below.
+
+.config(function ($routeProvider, $locationProvider) { $routeProvider .when("/home", { templateUrl: "Templates/home.html", controller: "homeController" }) .when("/courses", { templateUrl: "Templates/courses.html", controller: "coursesController" }) .when("/students", { templateUrl: "Templates/students.html", controller: "studentsController" }) .otherwise({ redirectTo: "/home" }) $locationProvider.html5Mode(true);
+})
+
+With this change if the user tries to navigate to a route that is not configured (http://localhost:51983/ABC) or just to the rooot URL (http://localhost:51983), the user will be automatically redirected to http://localhost:51983/home.
+
+    -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="Demo">
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <link href="Styles.css" rel="stylesheet" />
+    <script src="Scripts/script.js"></script>
+    <base href="/" />
 </head>
 <body>
-<ul>
-    <li>Gamla <a href="old.html">old.html</a> ospeciferat</li>
-    <li><a href="01.html">01.html</a></li>
-    <li><a href="02.html">02.html</a></li>
-    <li><a href="02.html">02.html</a></li>
-    <li><a href="03.html">03.html</a></li>
-    <li><a href="04.html">04.html</a></li>
-    <li><a href="05.html">05.html</a></li>
-    <li><a href="06.html">06.html</a></li>
-    <li><a href="07.html">07.html</a></li>
-    <li><a href="08.html">08.html</a></li>
-    <li><a href="09.html">09.html</a></li>
-    <li><a href="10.html">10.html</a></li>
-    <li><a href="11.html">11.html</a></li>
-    <li><a href="12.html">12.html</a></li>
-    <li><a href="13.html">13.html</a></li>
-    <li><a href="14.html">14.html</a></li>
-    <li><a href="15.html">15.html</a></li>
-    <li><a href="16.html">16.html</a></li>
-    <li><a href="17.html">17.html</a></li>
-    <li><a href="18.html">18.html</a></li>
-    <li><a href="19.html">19.html</a></li>
-    <li><a href="20.html">20.html</a></li>
-    <li><a href="21.html">21.html</a></li>
-    <li><a href="22.html">22.html</a></li>
-    <li><a href="23.html">23.html</a></li>
-    <li><a href="24.html">24.html</a></li>
-    <li><a href="25.html">25.html</a></li>
-    <li><a href="26.html">26.html</a></li>
-    <li><a href="27.html">27.html</a></li>
-    <li><a href="28.html">28.html</a></li>
-    <li><a href="29.html">29.html</a></li>
-    <li><a href="30.html">30.html</a></li>
-    <li><a href="31.html">31.html</a></li>
-    <li><a href="32.html">32.html</a></li>
-    <li><a href="33.html">33.html</a></li>
-    <li><a href="34.html">34.html</a></li>
-    <li><a href="35.html">35.html</a></li>
-    <li><a href="36.html">36.html</a></li>
-    <li><a href="37.html">37.html</a></li>
-    <li><a href="38.html">38.html</a></li>
-</ul></body>
+    <table style="font-family: Arial">
+        <tr>
+            <td colspan="2" class="header">
+                <h1>
+                    WebSite Header
+                </h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="leftMenu">
+                <a href="home">Home</a>
+                <a href="courses">Courses</a>
+                <a href="students">Students</a>
+            </td>
+            <td class="mainContent">
+                <ng-view></ng-view>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer">
+                <b>Website Footer</b>
+            </td>
+        </tr>
+    </table>
+</body>
 </html>
+
+
+
+<!--
+    27 Remove # from URL AngularJS
+
+In this video we will discuss how to remove # from URL. This is continuation to Part 26. Please watch Part 26 from AngularJS tutorial.
+
+There are 4 simple steps to remove # from URLs in Angular.
+
+Step 1 : Enable html5mode routing. To do this inject $locationProvider into config() function in script.js and call html5Mode() method passing true as the argument value. With this change the config function will now look as shown below.
+
+.config(function ($routeProvider, $locationProvider) { $routeProvider .when("/home", { templateUrl: "Templates/home.html", controller: "homeController" }) .when("/courses", { templateUrl: "Templates/courses.html", controller: "coursesController" }) .when("/students", { templateUrl: "Templates/students.html", controller: "studentsController" }) $locationProvider.html5Mode(true);
+})
+
+Step 2 : In index.html, remove # symbols from all the links. The links in index.html should look as shown below.
+
+[a href="home"]Home[/a]
+[a href="courses"]Courses[/a]
+[a href="students"]Students[/a]
+
+Step 3 : Include the following URL rewrite rule in web.config. This rewrite rule, rewrites all urls to index.html, except if the request is for a file, or a directory or a Web API request.
+
+<system.webServer>
+    <rewrite>
+      <rules>
+        <rule name="RewriteRules" stopProcessing="true">
+          <match url=".*" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+            <add input="{REQUEST_URI}" pattern="^/(api)" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="/index.html" />
+        </rule>
+      </rules>
+    </rewrite>
+</system.webServer>
+
+Step 4 : Set the base href to the location of your single page application. In the head section of index.html include the following line.
+[base href="/" /]
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="Demo">
+<head>
+    <title></title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <link href="Styles.css" rel="stylesheet" />
+    <script src="Scripts/script.js"></script>
+    <base href="/" />
+</head>
+<body>
+    <table style="font-family: Arial">
+        <tr>
+            <td colspan="2" class="header">
+                <h1>
+                    WebSite Header
+                </h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="leftMenu">
+                <a href="home">Home</a>
+                <a href="courses">Courses</a>
+                <a href="students">Students</a>
+            </td>
+            <td class="mainContent">
+                <ng-view></ng-view>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer">
+                <b>Website Footer</b>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+-->
+
+
+<!--
+    25 Angularjs partial templates
+    26 Angularjs route configuration
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="Demo">
+<head>
+    <title></title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <link href="Styles.css" rel="stylesheet" />
+    <script src="Scripts/script.js"></script>
+</head>
+<body>
+    <table style="font-family: Arial">
+        <tr>
+            <td colspan="2" class="header">
+                <h1>
+                    WebSite Header
+                </h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="leftMenu">
+                <a href="#/home">Home</a>
+                <a href="#/courses">Courses</a>
+                <a href="#/students">Students</a>
+            </td>
+            <td class="mainContent">
+                <ng-view></ng-view>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer">
+                <b>Website Footer</b>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+        -->
+ 

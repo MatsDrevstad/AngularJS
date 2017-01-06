@@ -1,4 +1,4 @@
-﻿24
+﻿24, 25
 
  Create table tblStudents
 (

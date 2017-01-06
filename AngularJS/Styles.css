@@ -1,4 +1,4 @@
-﻿body {
+﻿/*body {
 }
 th {
     text-align:left;
@@ -42,9 +42,9 @@ td {
     padding: 10px;
     overflow-y: scroll;
 
-}
+}*/
 
- /*23*/
+ /*23 - 25*/
   .header {
     width: 800px;
     height: 80px;
